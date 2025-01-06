@@ -1,0 +1,17 @@
+{
+  "name": "blog-search",
+  "version": "1.0.0",
+  "description": "A simple blog platform that uses Elasticsearch for fast search capabilities. Users can add blog posts and search them efficiently. The project integrates Tailwind CSS for a clean and modern UI.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17"
+  }
+}

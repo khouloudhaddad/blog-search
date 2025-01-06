@@ -1,0 +1,25 @@
+{
+    "name": "khoul/blog-search",
+    "description": "A simple blog platform that uses Elasticsearch for fast search capabilities. Users can add blog posts and search them efficiently. The project integrates Tailwind CSS for a clean and modern UI",
+    "type": "project",
+    "require": {
+        "elasticsearch/elasticsearch": "^8.17"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Khoul\\BlogSearch\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "khouloud Haddad Amamou",
+            "email": "khouloud.haddad@gmail.com"
+        }
+    ],
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    }
+}

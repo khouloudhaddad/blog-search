@@ -4,3 +4,4 @@
 .codegpt
 
 /vendor/
+/node_modules/

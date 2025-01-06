@@ -2,3 +2,5 @@
 .codegpt/vendor/
 
 .codegpt
+
+/vendor/

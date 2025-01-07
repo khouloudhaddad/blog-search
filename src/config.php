@@ -13,9 +13,9 @@ try {
         ->build();
 
     // Test the connection
-    $response = $esClient->info();
-    echo "Connected to Elasticsearch:\n";
-    print_r($response->asArray());
+    //$response = $esClient->info();
+    // echo "Connected to Elasticsearch:\n";
+    // print_r($response->asArray());
 
     // SQLite Database Configuration
     $db = new PDO('sqlite:blog.sqlite');

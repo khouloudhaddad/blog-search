@@ -1,7 +1,7 @@
 <?php
 
 // Full path to the Elasticsearch executable
-$elasticsearchPath = "C:\\elasticsearch-8.17.0\\bin\\elasticsearch.bat";
+$elasticsearchPath = "D:\\elasticsearch-7.17.26\\bin\\elasticsearch.bat";
 
 // Check if the Elasticsearch executable exists
 if (!file_exists($elasticsearchPath)) {

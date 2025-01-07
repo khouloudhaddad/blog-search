@@ -5,20 +5,24 @@ require '../vendor/autoload.php';
 use Elastic\Elasticsearch\ClientBuilder;
 //require '../start_elasticsearch.php';
 
+$elasticsearchHost = getenv('ELASTICSEARCH_HOST') ?: 'elasticsearch';
+$elasticsearchPort = getenv('ELASTICSEARCH_PORT') ?: 9200;
+
 // Elasticsearch Configuration
 try {
     // Create a client instance
     $esClient = ClientBuilder::create()
-        ->setHosts(['http://localhost:9200']) // Replace with your Elasticsearch host
+        ->setHosts(["http://{$elasticsearchHost}:{$elasticsearchPort}"]) // Replace with your Elasticsearch host
         ->build();
 
     // Test the connection
-    //$response = $esClient->info();
+    // $response = $esClient->info();
     // echo "Connected to Elasticsearch:\n";
     // print_r($response->asArray());
 
     // SQLite Database Configuration
-    $db = new PDO('sqlite:blog.sqlite');
+    $dbPath = dirname(__DIR__) . '/database/blog.sqlite';
+    $db = new PDO('sqlite:' . $dbPath);
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     // Create tables if not exists

@@ -1,9 +1,10 @@
-<nav class="bg-indigo-600 p-4 shadow-md mb-4">
+<!-- Navigation Menu -->
+<nav class="bg-indigo-600 p-4 shadow-md">
     <div class="flex items-center justify-between max-w-7xl mx-auto">
         <!-- Logo -->
-        <a href="/" class="flex items-center text-white text-2xl font-bold mr-4">
-            <img src="assets/logo.webp" alt="Logo" class="h-8 mr-2 rounded" width="55">
-            &nbsp;BlogSearch
+        <a href="/" class="flex items-center text-white text-2xl font-bold">
+            <img src="assets/logo.webp" alt="Logo" class="h-12 mr-2 rounded" width="85">
+            BlogSearch
         </a>
 
         <!-- Navigation Links -->

@@ -2,6 +2,93 @@
 @tailwind components;
 @tailwind utilities;
 
-.mr-4{
-    margin-right: 4rem;
+.mr-4 {
+  margin-right: 4rem;
+}
+/* Make the swiper container take full width and hide overflow */
+.swiper-container {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  padding: 20px 0;
+  overflow: hidden; /* Prevent horizontal scroll */
+}
+
+/* Style for swiper slides */
+.swiper-slide {
+  width: 100%;
+  max-width: 300px; /* Set max width of each slide */
+  height: auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000; /* Customize arrow color */
+  top: 60%;
+  transform: translateY(-50%);
+}
+
+.swiper-pagination {
+  bottom: 10px;
+}
+
+/* Style the next button */
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 24px; /* Change the size of the icon */
+    color: #333; /* Change the color of the icon */
+    content: '\f054'; /* Font Awesome icon for the right arrow (for example) */
+    font-family: 'Font Awesome 5 Free'; /* Make sure to specify Font Awesome for the icons */
+    font-weight: 900; /* Ensure it's the bold style */
+}
+
+/* Style the next button */
+.swiper-button-next:after {
+    content: '\f054'; /* Right arrow icon from Font Awesome */
+}
+
+/* Style the previous button */
+.swiper-button-prev:after {
+    content: '\f053'; /* Left arrow icon from Font Awesome */
+    
+}
+.swiper-button-next{
+    margin-right: -30px;
+}
+/* Optional: Add custom styles to the buttons */
+.swiper-button-next, .swiper-button-prev {
+    background-color: #ddd; /* Remove default background */
+    border: none; /* Remove default borders */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.swiper-button-prev{
+    margin-left: -30px;
+}
+
+/* Optional: Add hover effect for the buttons */
+.swiper-button-next:hover, .swiper-button-prev:hover {
+    background-color: #7c7b7b; /* Slight dark background when hovering */
+    border-radius: 50%; /* Rounded edges */
+    transition: all 0.3s ease-in-out;
 }

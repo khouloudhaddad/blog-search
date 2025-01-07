@@ -99,6 +99,31 @@ php -S localhost:8000 -t public
 
 3. View the results below the search bar.
 
+## Run npx tailwindcss Inside the Container
+
+1. Get the Container Name
+First, ensure that your container is running:
+```
+docker ps
+```
+
+This will list all running containers. Look for the blog-search-app container or whatever name you've given your app's container.
+
+2. Enter the Running Container
+Next, you need to exec into the running blog-search-app container. Run the following:
+```
+docker exec -it blog-search-app bash
+```
+
+This will give you a shell inside the container.
+
+3. Run Tailwind CSS Build with npx
+Now, inside the container, you can run the Tailwind CSS build process:
+```
+npx tailwindcss -i ./public/styles.css -o ./public/output.css --watch
+```
+This should start watching for changes in your styles.css and output to output.css.
+
 
 ## Technologies Used
 
